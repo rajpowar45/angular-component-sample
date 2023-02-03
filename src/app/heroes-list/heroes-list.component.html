@@ -1,0 +1,22 @@
+<br>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<!-- <input type="text" class="form-control" [(ngModel)]="serverName"> -->
+<p>{{ serverName }}</p>
+
+<h3>HEROES</h3>
+<p>Get your heroes here</p>
+<div>{{test}}</div>
+
+<!-- <button (click)="onupdateServerName()">Heros button</button> -->
+<button (click)="onCreateServer()">Heros button</button>
+<!-- <p> {{ serverCreationStatus }} </p><br> -->
+<p *ngIf ="disabled; else noServer"> server is created server name {{ serverName }} </p>
+<ng-template #noServer >
+  <p> server was not created</p>
+</ng-template>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

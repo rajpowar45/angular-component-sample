@@ -1,0 +1,19 @@
+<h1>Angular Router Sample {{ title }}</h1>
+<nav>
+  <button class="btn btn-primary" [disabled]="!allowed" > Add server </button>
+  <a class="button" routerLink="/crisis-list" routerLinkActive="activebutton" >Crisis Center</a> |
+  <a class="button" routerLink="/heroes-list" routerLinkActive="activebutton">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
+<div>{{test}}</div>
+<button (click)="clickA()">app component</button>
+
+<app-heroes-list> </app-heroes-list>
+<app-crisis-list> </app-crisis-list>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
