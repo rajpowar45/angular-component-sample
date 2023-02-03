@@ -8,12 +8,12 @@ import { Component, OnChanges, OnDestroy, SimpleChanges } from '@angular/core';
 export class AppComponent implements OnChanges {
  // title = 'angular-router-sample';
   title ="Hello Raj";
-  allowed : boolean = false;
+  allowed = false;
   constructor(){
 console.log("construc called")
     setTimeout(()=>{                           // <<<---using ()=> syntax
-     // this.title = "welcome raj";
-      this.allowed =true;
+      this.title = "welcome raj !!!";
+      this.allowed = true;
   }, 3000);
     
   
@@ -22,7 +22,7 @@ console.log("construc called")
 
   get test() {
     console.log('test AppComponent')
-    return 1;
+    return 2;
   }
   ngOnChanges(changes:SimpleChanges){
 

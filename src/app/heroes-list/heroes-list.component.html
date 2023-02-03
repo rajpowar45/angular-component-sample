@@ -1,16 +1,18 @@
 <br>
+*****************************
+<br>
 <input type="text" class="form-control" (input)="onUpdateServerName($event)">
 <!-- <input type="text" class="form-control" [(ngModel)]="serverName"> -->
 <p>{{ serverName }}</p>
 
-<h3>HEROES</h3>
-<p>Get your heroes here</p>
-<div>{{test}}</div>
+<!-- <h3>HEROES</h3>
+<p>Get your heroes here</p> -->
+<!-- <div>{{test}}</div> -->
 
 <!-- <button (click)="onupdateServerName()">Heros button</button> -->
-<button (click)="onCreateServer()">Heros button</button>
+<button (click)="onCreateServer()">create server</button>
 <!-- <p> {{ serverCreationStatus }} </p><br> -->
-<p *ngIf ="disabled; else noServer"> server is created server name {{ serverName }} </p>
+<p *ngIf ="disabled; else noServer"> server is created with server name {{ serverName }} </p>
 <ng-template #noServer >
   <p> server was not created</p>
 </ng-template>

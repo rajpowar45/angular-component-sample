@@ -1,15 +1,16 @@
 <h1>Angular Router Sample {{ title }}</h1>
 <nav>
-  <button class="btn btn-primary" [disabled]="!allowed" > Add server </button>
-  <a class="button" routerLink="/crisis-list" routerLinkActive="activebutton" >Crisis Center</a> |
-  <a class="button" routerLink="/heroes-list" routerLinkActive="activebutton">Heroes</a>
+  <button class="button" [disabled]="!allowed" > Add server </button> 
+  <a class="button" routerLink="/heroes-list" routerLinkActive="activebutton">Heroes</a> |
+  <a class="button" routerLink="/crisis-list" routerLinkActive="activebutton" >Crisis Center</a> 
+  
 </nav>
 <router-outlet></router-outlet>
-<div>{{test}}</div>
-<button (click)="clickA()">app component</button>
+<!-- <div>{{test}}</div> -->
+<!-- <button (click)="clickA()">app component</button> -->
 
-<app-heroes-list> </app-heroes-list>
-<app-crisis-list> </app-crisis-list>
+<!-- <app-heroes-list> </app-heroes-list>
+<app-crisis-list> </app-crisis-list> -->
 
 
 <!-- 
